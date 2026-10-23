@@ -18,20 +18,24 @@
     <meta property="og:url" content="https://avaluosbcc.com/">
     <meta property="og:title" content="Avalúos BCC | Firma de Avalúos Profesionales en Colombia">
     <meta property="og:description" content="Avalúos urbanos, rurales, comerciales e industriales. Avaluador registrado RAA. Valor real, decisiones seguras.">
-    <meta property="og:image" content="/logo-wide.png">
+    <meta property="og:image" content="https://avaluosbcc.com/logo-wide.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://avaluosbcc.com/">
     <meta property="twitter:title" content="Avalúos BCC | Firma de Avalúos Profesionales en Colombia">
     <meta property="twitter:description" content="Avalúos urbanos, rurales, comerciales e industriales. Avaluador registrado RAA.">
-    <meta property="twitter:image" content="/logo-wide.png">
+    <meta property="twitter:image" content="https://avaluosbcc.com/logo-wide.png">
 
     <link rel="icon" type="image/jpeg" href="/logo-square.jpg">
 
-    <!-- Google Fonts -->
+    <!-- Preloads & Performance -->
+    <link rel="preload" as="image" href="/logo-wide.png">
+
+    <!-- Google Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -44,10 +48,16 @@
       "alternateName": "Avalúos BCC Colombia",
       "description": "Firma especializada en servicios de avalúos, consultoría y análisis técnico de bienes urbanos, rurales, comerciales e industriales en Colombia.",
       "url": "https://avaluosbcc.com/",
+      "logo": "https://avaluosbcc.com/logo-wide.png",
+      "image": "https://avaluosbcc.com/logo-wide.png",
       "telephone": "+573112091140",
-      "email": "benjaminceleita@gmail.com",
+      "email": "contacto@avaluosbcc.com.co",
       "areaServed": { "@type": "Country", "name": "Colombia" },
-      "founder": { "@type": "Person", "name": "Benjamín Celeita C." },
+      "founder": { 
+        "@type": "Person", 
+        "name": "Benjamín Celeita C.",
+        "jobTitle": "Avaluador Profesional RAA"
+      },
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+573112091140",
@@ -69,10 +79,10 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a href="#inicio" class="logo">
-                <img src="/logo-wide.png" alt="Avalúos BCC Logo" class="brand-logo">
+            <a href="#inicio" class="logo" aria-label="Avalúos BCC - Inicio">
+                <img src="/logo-wide.png" alt="Avalúos BCC Logo" class="brand-logo" width="200" height="100">
             </a>
-            <nav class="nav">
+            <nav class="nav" aria-label="Navegación principal">
                 <ul class="nav-list">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -81,7 +91,7 @@
                 </ul>
             </nav>
             <a href="#contacto" class="btn btn-primary">Cotizar Ahora</a>
-            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
 
@@ -134,52 +144,58 @@
         </section>
 
         <section id="nosotros" class="about">
-            <div class="container about-container">
-                <div class="about-image" style="position: sticky; top: 120px;">
-                    <img src="/hero.jpg" alt="Experto realizando avalúo" style="margin-bottom: 30px; border-radius: 10px; box-shadow: var(--shadow-md); width: 100%; object-fit: cover; max-height: 400px;">
-                    <div class="mission-vision-box" style="background: var(--light-bg); padding: 30px; border-radius: 10px; box-shadow: var(--shadow-md); border-left: 4px solid var(--secondary);">
-                        <h3 style="color: var(--primary); margin-bottom: 10px; font-family: var(--font-heading);"><i class="fa-solid fa-bullseye" style="color: var(--secondary); margin-right: 10px;"></i>Misión</h3>
-                        <p style="font-size: 0.95rem; margin-bottom: 20px;">Brindar servicios de avalúos y consultoría con altos estándares técnicos, éticos y profesionales, ofreciendo soluciones confiables y oportunas que contribuyan a la toma de decisiones de nuestros clientes en los sectores inmobiliario, financiero, jurídico y comercial.</p>
-                        
-                        <h3 style="color: var(--primary); margin-bottom: 10px; font-family: var(--font-heading);"><i class="fa-solid fa-eye" style="color: var(--secondary); margin-right: 10px;"></i>Visión</h3>
-                        <p style="font-size: 0.95rem;">Ser reconocidos como una marca a nivel nacional por la calidad, confiabilidad y precisión de nuestros servicios de avalúos y consultoría, consolidándonos como un aliado estratégico para personas, empresas y entidades que requieran respaldo técnico especializado.</p>
-                    </div>
+            <div class="container about-container" style="margin-bottom: 60px;">
+                <div class="about-image">
+                    <img src="/hero.jpg" alt="Avaluador profesional realizando inspección técnica de inmueble" loading="lazy" width="600" height="400" style="border-radius: 10px; box-shadow: var(--shadow-md); width: 100%; object-fit: cover; max-height: 400px; height: 100%;">
                 </div>
                 <div class="about-content">
                     <h2>Descripción Corporativa</h2>
                     <p>AVALUOS BCC, es una firma especializada en servicios de avalúos, consultoría y análisis técnico de bienes urbanos, rurales, comerciales e industriales, comprometida con ofrecer soluciones confiables, objetivas y ajustadas a las necesidades del mercado colombiano.</p>
                     <p>Nuestra empresa nace con el propósito de brindar respaldo técnico y profesional a personas, empresas, entidades financieras y jurídicas, mediante estudios de valoración realizados con criterios de transparencia, precisión y cumplimiento normativo.</p>
-                    <p>Contamos con experiencia en avalúos comerciales, avalúos rurales, apoyando procesos jurídicos, financieros, administrativos y comerciales.</p>
+                    <p>Contamos con experiencia en avalúos comerciales, avalúos rurales, apoyando procesos jurídicos, financieros, administrativos y comerciales bajo la dirección del avaluador profesional <strong>Benjamín Celeita C.</strong> (Avaluador Registrado RAA).</p>
+                </div>
+            </div>
 
-                    <h2 style="margin-top: 30px;">Nuestra Historia</h2>
+            <div class="container about-container">
+                <div class="mission-vision-box" style="background: var(--light-bg); padding: 40px 30px; border-radius: 10px; box-shadow: var(--shadow-md); border-left: 4px solid var(--secondary); align-self: center;">
+                    <h3 style="color: var(--primary); margin-bottom: 10px; font-family: var(--font-heading);"><i class="fa-solid fa-bullseye" style="color: var(--secondary); margin-right: 10px;"></i>Misión</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 25px;">Brindar servicios de avalúos y consultoría con altos estándares técnicos, éticos y profesionales, ofreciendo soluciones confiables y oportunas que contribuyan a la toma de decisiones de nuestros clientes en los sectores inmobiliario, financiero, jurídico y comercial.</p>
+                    
+                    <h3 style="color: var(--primary); margin-bottom: 10px; font-family: var(--font-heading);"><i class="fa-solid fa-eye" style="color: var(--secondary); margin-right: 10px;"></i>Visión</h3>
+                    <p style="font-size: 0.95rem;">Ser reconocidos como una marca a nivel nacional por la calidad, confiabilidad y precisión de nuestros servicios de avalúos y consultoría, consolidándonos como un aliado estratégico para personas, empresas y entidades que requieran respaldo técnico especializado.</p>
+                </div>
+                <div class="about-content">
+                    <h2>Nuestra Historia</h2>
                     <p>AVALUOS BCC surge como una iniciativa orientada a consolidar un servicio profesional e integral en el sector de los avalúos y la consultoría inmobiliaria en Colombia.</p>
                     <p>La compañía fue creada con la visión de combinar experiencia técnica, conocimiento del mercado y atención personalizada, permitiendo ofrecer soluciones ágiles y confiables a nuestros clientes. Desde sus inicios, la firma ha trabajado en el fortalecimiento de procesos de valoración urbana y rural, acompañamiento técnico y asesoría especializada para personas naturales, empresas y procesos jurídicos.</p>
                     <p>Gracias al compromiso, la ética profesional y la actualización permanente, AVALÚOS BCC continúa proyectándose como una marca de confianza y crecimiento en el sector de los avalúos y consultoría.</p>
-
-                    <ul class="features-list" style="margin-top: 30px;">
-                        <li>
-                            <i class="fa-solid fa-user-tie"></i>
-                            <div>
-                                <h4>Atención Personalizada</h4>
-                                <p>Soluciones ágiles y confiables a la medida de nuestros clientes.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-medal"></i>
-                            <div>
-                                <h4>Precios Competitivos con Calidad</h4>
-                                <p>Garantizando altos estándares técnicos, éticos y profesionales.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-scale-balanced"></i>
-                            <div>
-                                <h4>Cumplimiento Normativo</h4>
-                                <p>Se cumple con las técnicas valuatorias establecidas en la Resolución IGAC 620 de 2008.</p>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
+            </div>
+
+            <div class="container features-container" style="margin-top: 60px;">
+                <ul class="features-list">
+                    <li>
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div>
+                            <h4>Atención Personalizada</h4>
+                            <p>Soluciones ágiles y confiables a la medida de nuestros clientes.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h4>Precios Competitivos con Calidad</h4>
+                            <p>Garantizando altos estándares técnicos, éticos y profesionales.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <div>
+                            <h4>Cumplimiento Normativo</h4>
+                            <p>Se cumple con las técnicas valuatorias establecidas en la Resolución IGAC 620 de 2008.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -193,8 +209,8 @@
                         <div class="method">
                             <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
                             <div class="method-details">
-                                <h4>Teléfono / WhatsApp</h4>
-                                <a href="https://wa.me/573112091140" target="_blank">+57 311 209 1140</a>
+                                <h4>Teléfono</h4>
+                                <a href="tel:+573112091140">+57 311 209 1140</a>
                             </div>
                         </div>
                         <div class="method">
@@ -215,13 +231,72 @@
                 </div>
                 
                 <div class="contact-cta">
-                    <div class="cta-content">
-                        <i class="fa-solid fa-paper-plane cta-icon"></i>
-                        <h3>¿Desea solicitar una cotización?</h3>
-                        <p>Escríbanos directamente a nuestro correo electrónico y nuestro equipo de profesionales le responderá a la mayor brevedad posible.</p>
-                        <a href="mailto:contacto@avaluosbcc.com.co" class="btn btn-primary btn-large">
-                            <i class="fa-solid fa-envelope"></i> Enviar Correo
-                        </a>
+                    <div class="cta-form-wrapper">
+                        <div class="cta-badge"><i class="fa-solid fa-bolt"></i> Cotización Inmediata</div>
+                        <h3>Solicitar Cotización sin Costo</h3>
+                        <p>Complete el formulario y le responderemos con una propuesta técnica ajustada a su necesidad.</p>
+                        
+                        <form id="quote-form" class="quote-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quote-name">Nombre completo *</label>
+                                    <div class="input-with-icon">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" id="quote-name" name="name" required placeholder="Ej. Carlos Rodríguez" autocomplete="name">
+                                    </div>
+                                    <span class="error-msg" id="error-name"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quote-phone">Teléfono / WhatsApp *</label>
+                                    <div class="input-with-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <input type="tel" id="quote-phone" name="phone" required placeholder="Ej. 311 209 1140" autocomplete="tel">
+                                    </div>
+                                    <span class="error-msg" id="error-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quote-email">Correo electrónico</label>
+                                    <div class="input-with-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="email" id="quote-email" name="email" placeholder="cliente@correo.com" autocomplete="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quote-service">Tipo de avalúo *</label>
+                                    <div class="input-with-icon">
+                                        <i class="fa-solid fa-building-circle-check"></i>
+                                        <select id="quote-service" name="service" required>
+                                            <option value="" disabled selected>Seleccione una categoría</option>
+                                            <option value="Avalúos Urbanos (Apartamento, Casa, Local, Bodega)">Avalúos Urbanos</option>
+                                            <option value="Avalúos Rurales (Finca, Terreno, Terreno agrícola)">Avalúos Rurales</option>
+                                            <option value="Recursos Naturales y Protección">Recursos Naturales y Protección</option>
+                                            <option value="Intangibles Especiales / Jurídico">Intangibles Especiales (Daño emergente, lucro cesante)</option>
+                                            <option value="Otra Consultoría">Otra Consultoría Especializada</option>
+                                        </select>
+                                    </div>
+                                    <span class="error-msg" id="error-service"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quote-message">Detalles del inmueble o consulta</label>
+                                <textarea id="quote-message" name="message" rows="3" placeholder="Ciudad, municipio, área aproximada o requerimiento especial..."></textarea>
+                            </div>
+
+                            <div class="form-buttons">
+                                <button type="button" id="btn-whatsapp-quote" class="btn btn-whatsapp-action">
+                                    <i class="fa-brands fa-whatsapp"></i> Cotizar por WhatsApp
+                                </button>
+                                <button type="submit" id="btn-email-quote" class="btn btn-email-action">
+                                    <i class="fa-solid fa-envelope"></i> Enviar por Email
+                                </button>
+                            </div>
+                            <div id="form-feedback" class="form-feedback" role="alert" style="display: none;"></div>
+                            <p class="form-disclaimer"><i class="fa-solid fa-shield-halved"></i> Garantía de confidencialidad y respuesta oportuna.</p>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -232,12 +307,12 @@
         <div class="container footer-content">
             <div class="footer-brand">
                 <div class="logo">
-                    <img src="/logo-wide.png" alt="Avalúos BCC Logo" style="max-height: 60px;">
+                    <img src="/logo-wide.png" alt="Avalúos BCC Logo" loading="lazy" width="180" height="60" style="max-height: 60px;">
                 </div>
                 <p>El valor real para sus decisiones más importantes.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Avalúos BCC"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/573112091140" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Avalúos BCC"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-links">
@@ -251,8 +326,8 @@
             </div>
             <div class="footer-contact">
                 <h4>Contacto</h4>
-                <p>+57 311 209 1140</p>
-                <p>contacto@avaluosbcc.com.co</p>
+                <p><a href="tel:+573112091140" style="color: inherit;">+57 311 209 1140</a></p>
+                <p><a href="mailto:contacto@avaluosbcc.com.co" style="color: inherit;">contacto@avaluosbcc.com.co</a></p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -260,12 +335,17 @@
                 <p>&copy; <span id="year"></span> Avalúos BCC. Todos los derechos reservados.</p>
                 <a href="https://goldenrod-bee-973005.hostingersite.com" target="_blank" rel="noopener noreferrer" class="agency-signature">
                     <span>Desarrollado por</span>
-                    <img src="/agency-logo.png" alt="VRS Digital">
+                    <img src="/agency-logo.png" alt="VRS Digital" loading="lazy" width="80" height="24">
                 </a>
             </div>
         </div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573112091140" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>

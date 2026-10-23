@@ -1,0 +1,6 @@
+# Robots.txt for Avalúos BCC
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://avaluosbcc.com/sitemap.xml
